@@ -1,0 +1,82 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["es2020"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/infra/libs/util": ["packages/infra/libs/util/src/index.ts"],
+      "@/lambdas/fns/appsync-handlers": ["packages/lambdas/fns/fns.appsync.ts"],
+      "@/lambdas/fns/eventbridge-handlers": [
+        "packages/lambdas/fns/fns.eventbridge.ts"
+      ],
+      "@/lambdas/fns/eventbridge-handlers-secondary": [
+        "packages/lambdas/fns/fns.eventbridge-2.ts"
+      ],
+      "@/lambdas/fns/integrations-handlers": [
+        "packages/lambdas/fns/fns.integrations.ts"
+      ],
+      "@/lambdas/libs/automations": [
+        "packages/lambdas/libs/automations/src/index.ts"
+      ],
+      "@/lambdas/libs/chart-data": [
+        "packages/lambdas/libs/chart-data/src/index.ts"
+      ],
+      "@/lambdas/libs/clone-entity": [
+        "packages/lambdas/libs/clone-entity/src/index.ts"
+      ],
+      "@/lambdas/libs/collections": [
+        "packages/lambdas/libs/collections/src/index.ts"
+      ],
+      "@/lambdas/libs/common": [
+        "packages/lambdas/libs/common/src/common/index.ts"
+      ],
+      "@/lambdas/libs/core": ["packages/lambdas/libs/common/src/core/index.ts"],
+      "@/lambdas/libs/dashboards": [
+        "packages/lambdas/libs/dashboards/src/index.ts"
+      ],
+      "@/lambdas/libs/export": ["packages/lambdas/libs/export/src/index.ts"],
+      "@/lambdas/libs/import": ["packages/lambdas/libs/import/src/index.ts"],
+      "@/lambdas/libs/integrations": [
+        "packages/lambdas/libs/integrations/src/index.ts"
+      ],
+      "@/lambdas/libs/public-api": [
+        "packages/lambdas/libs/public-api/src/index.ts"
+      ],
+      "@/lambdas/libs/reindex": ["packages/lambdas/libs/reindex/src/index.ts"],
+      "@/lambdas/libs/test-support": [
+        "packages/lambdas/libs/test-support/src/index.ts"
+      ],
+      "@/lambdas/libs/util": ["packages/lambdas/libs/util/src/index.ts"],
+      "@/lambdas/libs/views": ["packages/lambdas/libs/views/src/index.ts"],
+      "@/lambdas/server": ["packages/lambdas/server/src/index.ts"],
+      "@/plugins/lambda": ["packages/plugins/lambda/src/index.ts"],
+      "@/shared/aws": ["packages/shared/aws/src/index.ts"],
+      "@/shared/graphql": ["packages/shared/graphql/src/index.ts"],
+      "@/shared/graphql/types": [
+        "packages/shared/graphql/src/schema/schema.types.ts"
+      ],
+      "@/shared/search/mapping": [
+        "packages/shared/search/src/mapping/index.ts"
+      ],
+      "@/shared/variables": ["packages/shared/variables/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
